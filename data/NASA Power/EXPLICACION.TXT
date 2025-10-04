@@ -1,0 +1,13 @@
+//DATASET 1: TIENE
+POWER_Point_Climatology_Climatology_2019_2024_017d70S_063d15W_LST
+
+T2M – Temperatura a 2 m
+
+RH2M – Humedad relativa
+
+PRECTOTCORR – Precipitación total
+
+WS2M – Velocidad del viento a 2 m
+
+ALLSKY_SFC_SW_DWN – Radiación solar superficial
+
