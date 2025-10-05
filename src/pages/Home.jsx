@@ -7,18 +7,6 @@ const Home = () => {
     return (
         <div>
             <h1>Welcome to the Rain Prediction App</h1>
-            <div className="link-cards">
-                <LinkCard
-                    title="Page 1"
-                    description="Description of Page 1"
-                    to="/page1"
-                />
-                <LinkCard
-                    title="Page 2"
-                    description="Description of Page 2"
-                    to="/page2"
-                />
-            </div>
             <MapComponent />
 
         </div>
