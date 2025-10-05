@@ -13,24 +13,24 @@ import java.time.LocalDate;
 @Setter
 public class ClimateResponseDto {
     // ==== Temperatura ====
-    private Double t2m;       // Temperatura a 2 metros
-    private Double t2mMax;    // Temperatura máxima a 2 metros
-    private Double t2mMin;    // Temperatura mínima a 2 metros
+    private Double T2M;       // Temperatura a 2 metros
+    private Double T2M_MAX;    // Temperatura máxima a 2 metros
+    private Double T2M_MIN;    // Temperatura mínima a 2 metros
 
     // ==== Humedad ====
-    private Double dewPoint;          // Punto de rocío o helada
-    private Double relativeHumidity;  // Humedad relativa (%)
+    private Double T2MDEW;          // Punto de rocío o helada
+    private Double T2MWET;  // Humedad relativa (%)
 
     // ==== Radiación ====
-    private Double allskySfcSwDwn;    // Radiación total (con nubes)
+    private Double ALLSKY_SFC_SW_DWN;    // Radiación total (con nubes)
 
     // ==== Nubosidad ====
-    private Double cloudAmount;       // Fracción de nubosidad (0–1)
+    private Double CLOUD_AMT;       // Fracción de nubosidad (0–1)
 
     // ==== Precipitación ====
-    private Double precipitationAvg;  // Precipitación promedio
+    private Double PRECTOTCORR;  // Precipitación promedio
 
     // ==== Viento y presión ====
-    private Double surfacePressure;   // Presión superficial (hPa)
-    private Double ws10m;             // Velocidad del viento a 10 m
+    private Double PS;   // Presión superficial (hPa)
+    private Double WS10M;             // Velocidad del viento a 10 m
 }

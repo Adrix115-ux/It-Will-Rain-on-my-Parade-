@@ -41,7 +41,10 @@ RETRY_BACKOFF_S = 1.5
 PAUSE_BETWEEN_REQUESTS = 0.4
 EARTH_R_KM = 6371.0
 
-TRAIN_BASE = r"C:\Users\ENVY\Documents\It-Will-Rain-on-my-Parade\DatosEntrenaMiento"
+from pathlib import Path
+
+PROJECT_ROOT = Path(__file__).resolve().parents[1]  # .../It-Will-Rain-on-my-Parade
+TRAIN_BASE = PROJECT_ROOT / "DatosEntrenaMiento"
 DATA_DIR = os.path.join(TRAIN_BASE, "data_cache")
 CKPT_DIR = os.path.join(TRAIN_BASE, "checkpoints")
 MODELS_DIR = os.path.join(TRAIN_BASE, "models")

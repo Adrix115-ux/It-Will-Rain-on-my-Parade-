@@ -1,9 +1,11 @@
+// src/main/java/com/example/Climate_Logic/config/CorsFilter.java
 package com.example.Climate_Logic.config;
 
 import jakarta.servlet.*;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import lombok.extern.slf4j.Slf4j;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.Ordered;
 import org.springframework.core.annotation.Order;
@@ -11,11 +13,12 @@ import org.springframework.stereotype.Component;
 
 import java.io.IOException;
 
-@Slf4j
 @Component
 @Configuration
 @Order(Ordered.HIGHEST_PRECEDENCE)
 public class CorsFilter implements Filter {
+
+    private static final Logger log = LoggerFactory.getLogger(CorsFilter.class);
 
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
@@ -32,6 +35,13 @@ public class CorsFilter implements Filter {
 
         if ("OPTIONS".equalsIgnoreCase(request.getMethod())) {
             response.setStatus(HttpServletResponse.SC_OK);
-        } else filterChain.doFilter(servletRequest, servletResponse);
+        } else {
+            filterChain.doFilter(servletRequest, servletResponse);
+        }
+    }
+
+    @Override
+    public void destroy() {
+        // no-op
     }
 }

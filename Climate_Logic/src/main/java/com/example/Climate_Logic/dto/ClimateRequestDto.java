@@ -14,10 +14,10 @@ import java.time.LocalDate;
 @ToString
 public class ClimateRequestDto {
     @JsonProperty(required = true)
-    private Float longitud;
+    private Float longitude;
     @JsonProperty(required = true)
-    private Float latitud;
+    private Float latitude;
     @JsonProperty(required = true)
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
-    private LocalDate fecha;
+    private LocalDate target_date;
 }

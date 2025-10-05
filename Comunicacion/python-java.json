@@ -4,32 +4,106 @@
   "horizon_months": 1,
   "lat": -17.6,
   "lon": -62.92,
-  "predictions": {
-    "T2M": 19.3094212090641,
-    "T2M_MAX": 22.783790858700158,
-    "T2M_MIN": 5.0341673814873165,
-    "T2MDEW": -3.717059947490201,
-    "T2MWET": 12.527374083112619,
-    "ALLSKY_SFC_SW_DWN": 14.38653310591328,
-    "CLRSKY_SFC_SW_DWN": 18.730672479922543,
-    "CLOUD_AMT": 62.12402076439916,
-    "RH2M": 47.403700954610706,
-    "QV2M": 4.014575624876382,
-    "PRECTOTCORR": 1.0446020768370505,
-    "PS": 97.71332824723669,
-    "WS2M": 3.8512529453647,
-    "WS10M": 5.53034603196353,
-    "WD2M": 122.45827702127465,
-    "WD10M": 160.4040351347619,
-    "GWETTOP": 0.36343534319857246,
-    "GWETROOT": 0.480941876479759,
-    "ALLSKY_SFC_SW_DIFF": 6.128986861550672,
-    "TOA_SW_DWN": 23.188179970086168,
-    "TS": 21.693968725746366,
-    "ALLSKY_SFC_PAR_TOT": 6.499157331391408,
-    "WS2M_MAX": 9.461587162486548,
-    "WS2M_MIN": 0.30979107028904235,
-    "WS10M_MAX": 13.278160263795057,
-    "WS10M_MIN": 0.37359355039847475
+  "data": {
+    "T2M": {
+      "value": 26.643333333355258,
+      "source_yyyymm": "202508",
+      "method": "linear_extrapolation_from_last_3",
+      "used_months": [
+        "202506",
+        "202507",
+        "202508"
+      ]
+    },
+    "T2M_MAX": {
+      "value": 47.67000000004191,
+      "source_yyyymm": "202508",
+      "method": "linear_extrapolation_from_last_3",
+      "used_months": [
+        "202506",
+        "202507",
+        "202508"
+      ]
+    },
+    "T2M_MIN": {
+      "value": 8.770000000006661,
+      "source_yyyymm": "202508",
+      "method": "linear_extrapolation_from_last_3",
+      "used_months": [
+        "202506",
+        "202507",
+        "202508"
+      ]
+    },
+    "T2MDEW": {
+      "value": 7.136666666643578,
+      "source_yyyymm": "202508",
+      "method": "linear_extrapolation_from_last_3",
+      "used_months": [
+        "202506",
+        "202507",
+        "202508"
+      ]
+    },
+    "T2MWET": {
+      "value": 16.886666666667224,
+      "source_yyyymm": "202508",
+      "method": "linear_extrapolation_from_last_3",
+      "used_months": [
+        "202506",
+        "202507",
+        "202508"
+      ]
+    },
+    "ALLSKY_SFC_SW_DWN": {
+      "value": 11.596666666671808,
+      "source_yyyymm": "202505",
+      "method": "linear_extrapolation_from_last_3",
+      "used_months": [
+        "202503",
+        "202504",
+        "202505"
+      ]
+    },
+    "CLOUD_AMT": {
+      "value": 0.0,
+      "source_yyyymm": "202505",
+      "method": "linear_extrapolation_from_last_3",
+      "used_months": [
+        "202503",
+        "202504",
+        "202505"
+      ]
+    },
+    "PRECTOTCORR": {
+      "value": 0.0,
+      "source_yyyymm": "202508",
+      "method": "linear_extrapolation_from_last_3",
+      "used_months": [
+        "202506",
+        "202507",
+        "202508"
+      ]
+    },
+    "PS": {
+      "value": 300.0,
+      "source_yyyymm": "202508",
+      "method": "linear_extrapolation_from_last_3",
+      "used_months": [
+        "202506",
+        "202507",
+        "202508"
+      ]
+    },
+    "WS10M": {
+      "value": 4.363333333337778,
+      "source_yyyymm": "202508",
+      "method": "linear_extrapolation_from_last_3",
+      "used_months": [
+        "202506",
+        "202507",
+        "202508"
+      ]
+    }
   }
 }

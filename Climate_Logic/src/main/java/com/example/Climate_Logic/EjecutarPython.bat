@@ -1,11 +1,12 @@
 @echo off
-REM === Archivo: run_python.bat ===
-REM %1, %2, %3 son los parámetros recibidos desde Java
+REM === Archivo: EjecutarPython.bat ===
+REM %1, %2, %3 son parámetros que puede recibir desde Java
 
-REM Ruta completa del ejecutable de Python
-set PYTHON_EXE="C:\laragon\bin\python\python-3.10\python.exe"
+REM Ir al directorio del BAT (por seguridad)
+cd /d "%~dp0"
 
-REM Ruta completa del script
-set SCRIPT_PATH="C:\Users\Alejandra\Documents\Personal\Climate_Logic\Climate_Logic\src\main\java\com\example\Climate_Logic\prueba.py"
+REM Ruta relativa al script Python desde este BAT
+set SCRIPT_PATH=..\..\..\..\..\..\..\ClimatoLogic\ClimatoLogic.py
 
-%PYTHON_EXE% %SCRIPT_PATH% %1 %2 %3
+REM Ejecutable de Python (usa el del PATH del sistema)
+python "%SCRIPT_PATH%" %1 %2 %3
