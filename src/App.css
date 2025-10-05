@@ -15,7 +15,70 @@ body {
   padding: 0 20px;
   line-height: 1.6;
 }
+/* Ajustes para la navbar y las cards */
+.navbar {
+  background-color: #2c3e50;
+  padding: 1rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
 
+.nav-cards {
+  display: flex;
+  flex-direction: row; /* Asegura que las cards estén en horizontal */
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Estilos específicos para las cards en la navbar */
+.navbar .card {
+  flex: 0 1 auto; /* Evita que las cards se estiren */
+  width: 200px;
+  height: auto;
+  background-color: #34495e;
+  padding: 0.8rem;
+  margin: 0; /* Elimina márgenes que puedan causar saltos de línea */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar .card h3 {
+  color: #ecf0f1;
+  font-size: 1rem;
+  margin: 0 0 0.5rem 0;
+}
+
+.navbar .card p {
+  display: none; /* Ocultamos la descripción para ahorrar espacio */
+}
+
+.navbar .card a {
+  color: #fff;
+  text-decoration: none;
+  background-color: #3498db;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+  .nav-cards {
+    flex-wrap: wrap; /* Permite que las cards se envuelvan en pantallas pequeñas */
+  }
+
+  .navbar .card {
+    width: 150px; /* Cards más pequeñas en móviles */
+  }
+}
 /* Navbar */
 nav {
   background-color: #2c3e50;
@@ -24,34 +87,6 @@ nav {
   margin: 20px 0;
 }
 
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: space-between;  /* Espaciado igual entre los elementos */
-  gap: 30px; /* Espacio entre los botones */
-  padding: 0;
-}
-
-nav ul li {
-  display: inline;
-}
-
-nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-size: 18px;
-  padding: 15px 25px;  /* Aumentamos el padding de los botones */
-  border-radius: 5px;
-  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-  border: 2px solid transparent;  /* Añadimos borde */
-}
-
-nav ul li a:hover {
-  background-color: #3498db;  /* Color más fuerte para el hover */
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  /* Agregamos sombra al hover */
-  border-color: #3498db;  /* Resaltar el borde cuando se hace hover */
-}
 
 /* Título principal */
 h1 {
