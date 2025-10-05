@@ -1,8 +1,12 @@
-// src/pages/Page2.js
-import React from 'react';
+import PredictionForm from '../components/PredictionForm';
 
-const Page2 = () => {
-    return <h2>This is Page 2</h2>;
-};
+function Page2() {
+    return (
+        <div className="page-container">
+            <h1>Predicción de Clima</h1>
+            <PredictionForm />
+        </div>
+    );
+}
 
 export default Page2;

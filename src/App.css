@@ -9,16 +9,17 @@
 
 /* Fondo general de la página */
 body {
-  background-color: #333;
-  font-family: Arial, sans-serif;
-  color: #f4f4f4;
+  background-color: #3f40a5;
+  font-family: 'Arial', sans-serif;
+  color: #333;
   padding: 0 20px;
+  line-height: 1.6;
 }
 
 /* Navbar */
 nav {
   background-color: #2c3e50;
-  padding: 15px 20px;
+  padding: 20px 40px;  /* Aumentamos el padding para mayor espacio */
   border-radius: 8px;
   margin: 20px 0;
 }
@@ -26,7 +27,9 @@ nav {
 nav ul {
   list-style: none;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;  /* Espaciado igual entre los elementos */
+  gap: 30px; /* Espacio entre los botones */
+  padding: 0;
 }
 
 nav ul li {
@@ -37,31 +40,58 @@ nav ul li a {
   color: white;
   text-decoration: none;
   font-size: 18px;
-  padding: 8px 16px;
+  padding: 15px 25px;  /* Aumentamos el padding de los botones */
   border-radius: 5px;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  border: 2px solid transparent;  /* Añadimos borde */
 }
 
 nav ul li a:hover {
-  background-color: #3498db;
+  background-color: #3498db;  /* Color más fuerte para el hover */
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  /* Agregamos sombra al hover */
+  border-color: #3498db;  /* Resaltar el borde cuando se hace hover */
 }
 
 /* Título principal */
 h1 {
-  font-size: 36px;
-  text-align: center;
-  margin-top: 20px;
-  color: #ecf0f1;
+  font-size: 48px;
   font-weight: bold;
+  color: white;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 40px 0;
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+  background-color: #3498db;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  height: 3px;
+  background-color: #2980b9;
 }
 
 /* Mapa */
 #map {
   width: 100%;
-  height: 400px; /* Ajusta el tamaño del mapa */
+  height: 450px;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   margin-bottom: 30px;
+  transition: all 0.3s ease;
+}
+
+#map:hover {
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
 }
 
 /* Contenedor de las tarjetas de navegación */
@@ -80,6 +110,12 @@ h1 {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   width: 250px;
   text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
 }
 
 .card h3 {
@@ -181,26 +217,4 @@ h2 {
   .card, .data-table {
     width: 100%;
   }
-}
-/* Estilo moderno y elegante para h1 */
-h1 {
-  font-size: 48px;
-  font-weight: bold;
-  color: #2c3e50;
-  text-align: center;
-  letter-spacing: 2px;  /* Espaciado entre letras */
-  text-transform: uppercase;  /* Todo en mayúsculas */
-  margin: 40px 0;
-  font-family: 'Roboto', sans-serif;
-  position: relative;
-}
-
-h1::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 50%;
-  height: 3px;
-  background-color: #3498db;  /* Subrayado con color de acento */
 }

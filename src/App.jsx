@@ -5,7 +5,7 @@ import Page2 from './pages/Page2';
 import Home from './pages/Home';
 import Navbar from './components/Navbar';
 import './App.css';
-import './index.css';
+//import './index.css';
 import './components/WeatherData.css';
 
 const App = () => (
