@@ -1,0 +1,22 @@
+.btn {
+    padding: 8px 14px;
+    border-radius: 10px;
+    border: 0;
+    background: #2563eb;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 1px 4px rgba(0,0,0,.10);
+}
+.btn:hover { filter: brightness(.97); }
+
+.table-card {
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 1px 6px rgba(0,0,0,.06);
+}
+.table-scroll { max-height: 520px; overflow: auto; margin: 8px 14px 14px; border: 1px dashed #e5e7eb; border-radius: 6px; padding: 6px; }
+.result-table { width: 100%; border-collapse: collapse; }
+.result-table th, .result-table td { border-bottom: 1px solid #eee; padding: 8px 10px; text-align: left; }
+.result-table thead th { position: sticky; top: 0; background: #fafafa; z-index: 1; }

@@ -1,0 +1,39 @@
+/* Advanced data section */
+.advanced-section { margin-top: 12px; }
+
+.advanced-section > button {
+    padding: 8px 14px;
+    border-radius: 10px;
+    border: 0;
+    background: #eef2f7;
+    color: #1f2d3d;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 1px 4px rgba(0,0,0,.10);
+}
+.advanced-section > button:hover { filter: brightness(0.98); }
+
+.advanced-data {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 10px;
+}
+
+.data-item {
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    background: #fff;
+    padding: 10px;
+    box-shadow: 0 1px 4px rgba(0,0,0,.06);
+}
+.data-item h4 {
+    margin: 0 0 6px 0;
+    font-size: 13px;
+    color: #334155;
+    font-weight: 600;
+}
+.data-item p {
+    margin: 0;
+    font-weight: 600;
+}

@@ -1,0 +1,100 @@
+/* src/components/WeatherData.css */
+
+/* Reseteamos algunos estilos por defecto */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Contenedor general de la página de datos */
+.page-container {
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Título */
+h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-top: 20px;
+    color: #ecf0f1;
+    font-weight: bold;
+}
+
+/* Tarjetas de datos importantes */
+.data-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.data-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 220px;
+    text-align: center;
+}
+
+.data-card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.data-card p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.data-card .unit {
+    font-size: 14px;
+    color: #58adc7;
+}
+
+/* Botón para datos avanzados */
+.advanced-section button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.advanced-section button:hover {
+    background-color: #2980b9;
+}
+
+/* Sección de datos avanzados */
+.advanced-data {
+    margin-top: 20px;
+}
+
+.data-item {
+    background-color: #58adc7;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    color: #ecf0f1;
+}
+
+.data-item h4 {
+    font-size: 18px;
+}
+
+.data-item p {
+    font-size: 16px;
+}
+
+/* Media Queries para móviles */
+@media (max-width: 768px) {
+    .data-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}
