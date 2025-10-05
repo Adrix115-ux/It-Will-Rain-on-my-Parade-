@@ -32,7 +32,7 @@ h1 {
 }
 
 .data-card {
-    background-color: #34495e;
+    background-color: #ffffff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -52,7 +52,7 @@ h1 {
 
 .data-card .unit {
     font-size: 14px;
-    color: #bdc3c7;
+    color: #58adc7;
 }
 
 /* Botón para datos avanzados */
@@ -76,7 +76,7 @@ h1 {
 }
 
 .data-item {
-    background-color: #34495e;
+    background-color: #58adc7;
     padding: 15px;
     border-radius: 8px;
     margin-bottom: 10px;

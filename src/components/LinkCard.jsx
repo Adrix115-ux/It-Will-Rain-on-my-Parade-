@@ -7,7 +7,7 @@ const LinkCard = ({ title, description, to }) => {
         <div className="card">
             <h3>{title}</h3>
             <p>{description}</p>
-            <Link to={to}>Go to {title}</Link>
+            <Link to={to}> Ir a {title}</Link>
         </div>
     );
 };
