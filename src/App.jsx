@@ -5,6 +5,9 @@ import Page2 from './pages/Page2';
 import Home from './pages/Home';
 import './App.css'; // Importa el archivo CSS para aplicar los estilos
 import './index.css'
+import './components/WeatherData.css';
+import Navbar from './components/Navbar';
+
 
 const App = () => (
     <Router>

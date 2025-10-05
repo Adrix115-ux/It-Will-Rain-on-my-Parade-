@@ -7,7 +7,6 @@ const Home = () => {
     return (
         <div>
             <h1>Welcome to the Rain Prediction App</h1>
-            <MapComponent />
             <div className="link-cards">
                 <LinkCard
                     title="Page 1"
@@ -20,6 +19,8 @@ const Home = () => {
                     to="/page2"
                 />
             </div>
+            <MapComponent />
+
         </div>
     );
 };
