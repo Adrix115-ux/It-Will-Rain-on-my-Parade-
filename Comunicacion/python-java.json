@@ -1,0 +1,109 @@
+{
+  "requested_month": "202511",
+  "predicted_month": "202511",
+  "horizon_months": 1,
+  "lat": -17.6,
+  "lon": -62.92,
+  "data": {
+    "T2M": {
+      "value": 26.643333333355258,
+      "source_yyyymm": "202508",
+      "method": "linear_extrapolation_from_last_3",
+      "used_months": [
+        "202506",
+        "202507",
+        "202508"
+      ]
+    },
+    "T2M_MAX": {
+      "value": 47.67000000004191,
+      "source_yyyymm": "202508",
+      "method": "linear_extrapolation_from_last_3",
+      "used_months": [
+        "202506",
+        "202507",
+        "202508"
+      ]
+    },
+    "T2M_MIN": {
+      "value": 8.770000000006661,
+      "source_yyyymm": "202508",
+      "method": "linear_extrapolation_from_last_3",
+      "used_months": [
+        "202506",
+        "202507",
+        "202508"
+      ]
+    },
+    "T2MDEW": {
+      "value": 7.136666666643578,
+      "source_yyyymm": "202508",
+      "method": "linear_extrapolation_from_last_3",
+      "used_months": [
+        "202506",
+        "202507",
+        "202508"
+      ]
+    },
+    "T2MWET": {
+      "value": 16.886666666667224,
+      "source_yyyymm": "202508",
+      "method": "linear_extrapolation_from_last_3",
+      "used_months": [
+        "202506",
+        "202507",
+        "202508"
+      ]
+    },
+    "ALLSKY_SFC_SW_DWN": {
+      "value": 11.596666666671808,
+      "source_yyyymm": "202505",
+      "method": "linear_extrapolation_from_last_3",
+      "used_months": [
+        "202503",
+        "202504",
+        "202505"
+      ]
+    },
+    "CLOUD_AMT": {
+      "value": 0.0,
+      "source_yyyymm": "202505",
+      "method": "linear_extrapolation_from_last_3",
+      "used_months": [
+        "202503",
+        "202504",
+        "202505"
+      ]
+    },
+    "PRECTOTCORR": {
+      "value": 0.0,
+      "source_yyyymm": "202508",
+      "method": "linear_extrapolation_from_last_3",
+      "used_months": [
+        "202506",
+        "202507",
+        "202508"
+      ]
+    },
+    "PS": {
+      "value": 300.0,
+      "source_yyyymm": "202508",
+      "method": "linear_extrapolation_from_last_3",
+      "used_months": [
+        "202506",
+        "202507",
+        "202508"
+      ]
+    },
+    "WS10M": {
+      "value": 4.363333333337778,
+      "source_yyyymm": "202508",
+      "method": "linear_extrapolation_from_last_3",
+      "used_months": [
+        "202506",
+        "202507",
+        "202508"
+      ]
+    }
+  }
+}
